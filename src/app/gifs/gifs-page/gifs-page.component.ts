@@ -6,11 +6,4 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class GifsPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class GifsPageComponent{}

@@ -9,7 +9,6 @@ export class GifsService {
   private apiKey: string = 'qB6JOTE4Q4TH0PCRjzEOmKZD6yaOUKSs';
   private servicioUrl: string = 'https://api.giphy.com/v1/gifs';
   private _historial: string[] = [];
-
   public resultados: Gif[] = [];
 
   get historial() {
@@ -19,7 +18,7 @@ export class GifsService {
   constructor(private http: HttpClient) {
     this._historial = JSON.parse(localStorage.getItem('historial')!) || [];
     this.resultados = JSON.parse(localStorage.getItem('resultados')!) || [];
-
+    
     // if(localStorage.getItem('historial')) {
     //   this._historial = JSON.parse(localStorage.getItem('historial')!);
     // }
